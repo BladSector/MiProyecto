@@ -1,0 +1,25 @@
+{% extends 'Home.html' %}
+
+{% block title %} {{Quien}} {% endblock %}
+
+{% block content %}
+<br>
+
+<br/>
+<style type="text/css">
+    li{
+      color: white;
+    }
+</style>
+<h1 style='background-color: white;'>Datos de {{Quien}}</h1>
+<h2 style='color: white;'>Fecha de Nacimiento: {{Nacimiento}} </h2>
+<h2 style='color: white;'>Nombre: {{Nombre}}</h2>
+<h2 style='color: white;'>Edad: {{Edad}}</h2>
+<h2 style='color: white;'>Trabajo: {{Trabajo}}</h2>
+<ul>
+  <h1 style='color: white;'>Caracteristicas:</h1>
+  {% for caract in Caracteristicas %}
+  <li>{{caract|upper}}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
