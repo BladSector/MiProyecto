@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>{% block title%} {% endblock %}</title>
+</head>
+
+<body style="background-color:black;">
+</body>
+<br />
+{% include 'Navegacion.html'%}
+<br />
+<h1 style='background-color: white;'>{{Titulo}}</h1>
+<h2 style='color: white;'>Momento actual: {{Fecha}} </h2>
+<h2 style='color: white;'>Participantes: {{Participantes}}</h2>
+{% block content %}
+{% endblock %}
+<p>Este es el pie de pagina</p>
+
+</html>

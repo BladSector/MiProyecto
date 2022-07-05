@@ -35,7 +35,7 @@ def Home(request):
     Titulo = 'Proyecto "Nuestro Primer MVT"'
     Participantes= 'Santiago Lopez y Santiago Cuellar Dominguez'
     Fecha = (datetime.datetime.now().strftime("%A %d/%m/%Y %H:%M"))
-    PlantillaExterna = open("C:\MiProyecto\MiProyecto\plantillas\Home.html")
+    PlantillaExterna = open("C:\MiProyecto\plantillas\Home.html")
     template = Template(PlantillaExterna.read())
     PlantillaExterna.close()
     contexto = Context({'Titulo' : Titulo ,
@@ -55,7 +55,7 @@ def DatosPapa(request):
     edad = '63'
     trabajo = 'Medico Psiquiatra'
     caracteristicas = ['Pelo corto', 'Panzon', 'Ojos verdes']
-    PlantillaExterna = open("C:\MiProyecto\MiProyecto\plantillas\DatosPapa.html")
+    PlantillaExterna = open("C:\MiProyecto\plantillas\DatosPapa.html")
     template = Template(PlantillaExterna.read())
     PlantillaExterna.close()
     contexto = Context({'Nombre': nombre, 'Edad': edad,
